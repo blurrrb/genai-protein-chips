@@ -74,7 +74,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             <SelectContent>
               {product.sizes.map((size) => (
                 <SelectItem key={size.size} value={size.size}>
-                  {size.size} - ${size.price.toFixed(2)}
+                  {size.size} - ₹ {size.price.toFixed(2)}
                   <span className="ml-2 text-[#2A9D8F]">
                     ({size.size === "100g" ? "10g" : size.size === "50g" ? "5g" : "3g"} protein)
                   </span>
@@ -84,7 +84,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           </Select>
         </div>
         <div className="mb-6 flex items-center justify-between">
-          <div className="text-2xl font-bold text-[#0D0D0D]">${selectedSizeObj?.price.toFixed(2)}</div>
+          <div className="text-2xl font-bold text-[#0D0D0D]">₹ {selectedSizeObj?.price.toFixed(2)}</div>
           <div className="text-sm font-medium text-[#2A9D8F]">
             {selectedSize === "100g" ? "10g protein" : selectedSize === "50g" ? "5g protein" : "3g protein"}
           </div>

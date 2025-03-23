@@ -65,7 +65,7 @@ export default function CartPage() {
                           <h3 className="font-medium text-white">{item.name}</h3>
                           <div className="md:hidden">
                             <div className="mt-1 text-sm text-white">Size: {item.size}</div>
-                            <div className="mt-1 text-sm font-medium text-white">${item.price.toFixed(2)}</div>
+                            <div className="mt-1 text-sm font-medium text-white">₹{item.price.toFixed(2)}</div>
                           </div>
                           <Button 
                             variant="ghost" 
@@ -102,7 +102,7 @@ export default function CartPage() {
                           </Button>
                         </div>
                       </div>
-                      <div className="hidden text-right text-white md:block">${(item.price * item.quantity).toFixed(2)}</div>
+                      <div className="hidden text-right text-white md:block">₹{(item.price * item.quantity).toFixed(2)}</div>
                       <Button 
                         variant="ghost" 
                         size="sm" 
@@ -131,22 +131,22 @@ export default function CartPage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-white">Subtotal</span>
-                    <span className="text-white">${subtotal.toFixed(2)}</span>
+                    <span className="text-white">₹{subtotal.toFixed(2)}</span>
                   </div>
                   {discount > 0 && (
                     <div className="flex items-center justify-between text-[#2A9D8F]">
                       <span>Discount (10%)</span>
-                      <span>-${discountAmount.toFixed(2)}</span>
+                      <span>-₹{discountAmount.toFixed(2)}</span>
                     </div>
                   )}
                   <div className="flex items-center justify-between">
                     <span className="text-white">Shipping</span>
-                    <span className="text-white">${shipping.toFixed(2)}</span>
+                    <span className="text-white">₹{shipping.toFixed(2)}</span>
                   </div>
                   <Separator />
                   <div className="flex items-center justify-between font-medium">
                     <span className="text-white">Total</span>
-                    <span className="text-white">${total.toFixed(2)}</span>
+                    <span className="text-white">₹{total.toFixed(2)}</span>
                   </div>
                 </div>
               </div>

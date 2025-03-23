@@ -20,9 +20,9 @@ export default function Home() {
       image: "/images/classic-salted.webp",
       accentColor: "#F9A826",
       sizes: [
-        { size: "30g", price: 1.99, id: "classic-salted-30g" },
-        { size: "50g", price: 2.99, id: "classic-salted-50g" },
-        { size: "100g", price: 4.99, id: "classic-salted-100g" },
+        { size: "30g", price: 45, id: "classic-salted-30g" },
+        { size: "50g", price: 75, id: "classic-salted-50g" },
+        { size: "100g", price: 150, id: "classic-salted-100g" },
       ],
     },
     {
@@ -32,9 +32,9 @@ export default function Home() {
       image: "/images/indian-masala.webp",
       accentColor: "#F26419",
       sizes: [
-        { size: "30g", price: 1.99, id: "indian-masala-30g" },
-        { size: "50g", price: 2.99, id: "indian-masala-50g" },
-        { size: "100g", price: 4.99, id: "indian-masala-100g" },
+        { size: "30g", price: 45, id: "indian-masala-30g" },
+        { size: "50g", price: 75, id: "indian-masala-50g" },
+        { size: "100g", price: 150, id: "indian-masala-100g" },
       ],
     },
   ]
