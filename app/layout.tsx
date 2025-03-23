@@ -37,7 +37,7 @@ function RootLayoutHTML({  children }: Readonly<{ children: React.ReactNode}>) {
 
   return (<html lang="en">
     <body className={inter.className}>
-      <ThemeProvider attribute="class" defaultTheme="light">
+      <ThemeProvider attribute="class" defaultTheme="dark">
         <header className="sticky top-0 z-50 border-b bg-white">
           <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
             <Link href="/" className="flex items-center gap-2">
