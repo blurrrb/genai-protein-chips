@@ -187,7 +187,7 @@ export default function CartPage() {
         <div className="rounded-lg border p-12 text-center shadow">
           <h2 className="mb-4 text-2xl font-semibold text-white">Your cart is empty</h2>
           <p className="mb-8 text-gray-400">Looks like you haven't added any items to your cart yet.</p>
-          <Link href="/">
+          <Link href="/#product">
             <Button className="bg-[#E63946] hover:bg-[#d02331]">Start Shopping</Button>
           </Link>
         </div>
